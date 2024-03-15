@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(img/fondo.jpg);
+    background-size: cover;
+    
+
+}
+
+.title{
+    margin-left: 140px;
+    display: inline-block
+
+}
+
+.typewriter{
+    font-family:monospace;
+    font-size: 5em;
+    letter-spacing: 5;
+    color:aliceblue;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 2s steps(21),
+        cursor 0.4s step-end infinite alternate;
+}
+
+@keyframes cursor{
+    50%{border-color: transparent}
+}
+@keyframes typing{
+    from{width:0}
+}
+
+.text{
+    font-family:'Segoe UI'Ubuntu;
+    font-size: x-large;
+    color: aliceblue;
+}
+
+.btn-primary{
+    background-color: black;
+    border-color: black;
+    font-size: x-large;
+}
+
+.btn-primary:hover{
+    background-color: yellow;
+    border-color: yellow;
+    color:black;
+}
