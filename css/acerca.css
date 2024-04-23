@@ -71,80 +71,60 @@
 }
 
 .hero-section{
-    background: url(img/fondo.jpg) no-repeat center;
+    background: url(../img/fondo.jpg) no-repeat center;
     background-size: cover;
     width: 100%;
     height: 100vh;
+    margin-top: 100;
+}
+
+.hero-section::before{
+    
+    content: "";
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
 }
 
 .container{
-    width: 100%;
-    min-height: 100vh;
-    padding: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    max-width: 1000px;
 }
 
-.search-bar{
-    width: 100%;
-    max-width: 700px;
-    background: rgba(255,255,255,0.2);
-    display: flex;
+.container p{
+    text-align: justify;
+}
+.carousel-inner{
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.diapo{
+    height: 600px;
+    width: 1000px;
+    background: radial-gradient(circle at top left, transparent 340px, rgba(170, 39, 202, 0.582)), 
+    radial-gradient(circle at bottom right, transparent 340px, rgba(61, 5, 52, 0.582));
     border-radius: 20px;
-    align-items: center;
-    padding: 10px 20px;
 }
 
-.search-bar input{
-    border: 0;
-    background: transparent;
-    outline: none;
-    flex: 1;
-    padding: 24px 20px;
-    font-size: 20px;
-    color: #cac7ff;
-
+.inner-img1{
+    max-width:450px;
+    margin-left: 90px;
+    border-radius: 20px;
+    max-height: 250px;
+    object-fit: cover;
 }
 
-::placeholder{
-    color: #cac7ff;
+.titulo,.container p, .container h2,.subtitulo{
+    color:white
 }
 
-.search-bar button{
-    background: rgb(98, 15, 175);
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 50px;
-    font-size: 20px;
-    margin-left: 10px;
-    border: none;
-    cursor: pointer;
+.btn-primary{
+    background-color: rgb(98, 15, 175);
+    border-color: rgb(98, 15, 175);
 }
 
-.dropdown {
-    border: 1px solid lightblue;
-    border-radius: 4px;
-    padding: 0;
-    width: 100%;
-    max-height: 200px;
-    overflow-y: auto;
-    background-color: rgb(63, 2, 55);
-    
-  }
-  
-.dropdown-item {
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-.dropdown-item:hover {
-    background-color: rgb(146, 38, 123);
-    
-  }
-
-.div-text{
-    text-decoration: none;
-    color: white;
-    
-  }
+.btn-secondary{
+    background-color: black;
+    border-color: black;
+}
